@@ -1,0 +1,279 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+   
+    margin: 0 auto;
+    font-family: "微软雅黑";
+    width: 100%;
+    margin-top:-23px;
+    padding: 0;
+
+    
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+a{
+    list-style: none;
+    text-decoration:none;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input,button,select,textarea{outline:none;
+border:none;}
+ textarea{resize:none}
+ body{
+    width: 1440px;
+    height: 900px;
+    position: relative;
+    font-family: "微软雅黑";
+ }
+ #nav{
+    width: 1440px;
+    height:40px;
+    background:#464040;
+}
+/*导航栏*/
+#nav .title{
+    float: left;
+    width: 144px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 638px;
+    margin-top: 8px;
+}
+
+/*卓音签到系统*/
+#nav .title p{
+    font-size: 24px;
+    color: #fefefe;
+    line-height: 22px;
+    width: 500px;
+    text-align: left;
+
+}
+/*卓音*/
+#nav .title span{
+   
+    color: #46e28f;
+    font-size: 24px;
+}
+/*签到系统*/
+#nav li{
+    float: left;
+}
+#nav li a{
+    display: block;
+    color: #fefcfc;
+    font-size: 22px;
+    padding: 5px 45px;
+    background:#464040;
+}
+/*首页，历史公告，个人中心*/
+#nav li a:hover,#nav li  .a{
+    background-color: #466c55;
+}
+/*首页，历史公告，个人中心的变化*/
+#nav  #exitshow{
+    
+    font-size: 20px;
+    color: #fefcfc;
+    line-height: 40px;
+}
+/*退出登录的样式*/
+#content{
+    width: 1440px;
+    height: 692px;
+    background: url(../img/announce-bg.png) no-repeat;
+    position: relative;
+}
+/*历史公告*/
+#content .join{
+    background: url(../img/announce.png) no-repeat 0 0;
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    top: 21px;
+    left: 654px;
+    display: block;
+}
+/*卓音公告*/
+#content h2{
+    background: url(../img/announce.png) no-repeat  0 -30px;
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    top: 125px;
+    left: 120px;
+    display: block;
+}
+/*最新公告*/
+#content .according{
+    width: 854px;
+    height: 496px;
+    padding-top: 170px;
+    overflow: hidden; 
+    position: relative;
+
+}
+/*公告显示界面，一共一页显示四个公告*/
+#content .according .ul{
+    background: #80c4a0;
+    opacity: 0.45;
+    height: 340px;
+    border-radius:7px;
+    
+ } 
+ .ul-p{
+    position: absolute;
+    line-height: 35px;
+    top: 180px;
+    left: 40px;
+    width: 754px;
+ }
+#content .according p{
+    position: relative;
+    text-align: left;
+    margin-top: 10px;
+}
+#content .according a{
+    color: #fff;
+
+}
+#content .according span{
+    position: absolute;
+    right: 0;
+}
+
+/*最下方*/
+#bottom #last{
+    width: 1440px;
+    height: 97px;
+    background: url(../img/lastbg.png) no-repeat;
+    position: absolute;
+    bottom: 0;
+}
+/*横线*/
+#bottom .logo{
+    position: absolute;
+    top: 21px;
+    left: 684px;
+    background: url(../img/logo1.png)no-repeat;
+    width: 65px;
+    height: 62px;
+}
+/*卓音标志*/
+#bottom #last .center{
+    width: 292px;
+    height: 97px;
+    position: absolute;
+    top: 0;
+    left: 572px;
+}
+/*最后落款*/
+#bottom #last .center p{
+    width: 292px;
+    height: 63px;
+    text-align: center;
+    display: block;
+    line-height: 63px;
+    font-size: 24px;
+    color: #466c55;
+}
+/*Registration System*/
+#bottom #last .center span{
+    font-size: 14px;
+    color: #040404;
+    display: block;
+    width: 292px;
+    text-align: center;
+}
+/*东北师范大学·学生就业指导中心·卓音工作室*/
+.exit{
+    width: 307px;
+    height: 104px;
+    background-color: #fdfcfc;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right:0;
+    margin:0 auto;
+}
+/*退出框*/
+.exit p{
+    font-family: "微软雅黑";
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    width: 306px;
+    height: 62px;
+    line-height: 62px;
+}
+/*确定退出*/
+.exit .btn{
+    width: 133px;
+    height: 23px;
+    margin: 0 auto;
+}
+/*两个按钮*/
+.exit a{
+    background-color: #91928d;
+    width: 56px;
+    height: 23px;
+    display: block;
+    border-radius: 5px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #fcfbfb;
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+}
+/*确定，取消*/
+.exit .btn .no{
+    margin-left: 21px;
+}
+/*取消*/
+.hide{
+    display: none;
+}

@@ -1,0 +1,333 @@
+﻿@charset "utf-8";
+/*
+    Document   : CSS样式初始化
+    Created on : 2013. 8. 6,15:41:00
+    Author     :
+    Description:
+        CSS样式表的初始化，全局样式设置。部分样式属性请根据具体页面重置其属性
+导入方式：<link href="css/common.css" rel="stylesheet" type="text/css" />
+*/
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}  /* 初始化标签在所有浏览器中的margin、padding值 */
+fieldset,img {border:0 none}  /* 重置fieldset（表单分组）、图片的边框为0*/
+dl,ul,ol,menu,li {list-style:none}   /* 重置类表前导符号为onne,menu在HTML5中有效 */
+blockquote, q {quotes: none}   /* 重置嵌套引用的引号类型 */
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}  /* 重置嵌套引用*/
+input,select,textarea,button {vertical-align:middle}  /* 重置表单控件垂直居中*/
+button {border:0 none;background-color:transparent;cursor:pointer}  /* 重置表单button按钮效果 */
+body {background:#fff}   /* 重置body 页面背景为白色 */
+body,th,td,input,select,textarea,button {font-family:"微软雅黑";} /* 重置页面文字属性 */
+a {color:#666;text-decoration:none}  /* 重置链接a标签 */ 
+a:active, a:hover {text-decoration:none}   /* 重置链接a标签的鼠标滑动效果 */
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}  /* 重置样式标签的样式 */
+caption {display:none;}    /* 重置表格标题为隐藏 */
+table {width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;}    /* 重置table属性 */
+img{vertical-align:top}  /* 图片在当前行内的垂直位置 */
+/* 页面设置 */
+  /* 取消a标签点击后的虚线框 */
+a {outline: none;}  
+a:active {star:expression(this.onFocus=this.blur());}
+ /* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */ 
+/* 
+::selection {color: #fff;background-color: #4C6E78;}    
+::-moz-selection {color: #fff;background-color: #4C6E78;} 
+*/
+body {
+   
+    margin: 0 auto;
+    font-family: "微软雅黑";
+    width: 100%;
+    margin-top:-23px;
+    
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+a{
+    list-style: none;
+    text-decoration:none;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input,button,select,textarea{outline:none;
+border:none;}
+ textarea{resize:none}
+ body{
+    width: 1440px;
+    height: 900px;
+    position: relative;
+    font-family: "微软雅黑";
+ }
+ #nav{
+    width: 1440px;
+    height:40px;
+    background:#464040;
+}
+/*导航栏*/
+#nav .title{
+    float: left;
+    width: 144px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 638px;
+    margin-top: 8px;
+}
+
+/*卓音签到系统*/
+#nav .title p{
+    font-size: 24px;
+    color: #fefefe;
+    line-height: 22px;
+    width: 500px;
+    text-align: left;
+
+}
+/*卓音*/
+#nav .title span{
+   
+    color: #46e28f;
+    font-size: 24px;
+}
+/*签到系统*/
+#nav li{
+    float: left;
+}
+#nav li a{
+    display: block;
+    color: #fefcfc;
+    font-size: 22px;
+    padding: 5px 45px;
+    background:#464040;
+}
+/*首页，历史公告，个人中心*/
+#nav li a:hover,#nav li  .a{
+    background-color: #466c55;
+}
+/*首页，历史公告，个人中心的变化*/
+#nav  #exitshow{
+    
+    font-size: 20px;
+    color: #fefcfc;
+    line-height: 40px;
+}
+/*退出登录的样式*/
+.hide{
+    display: none;
+}
+/*背景*/
+#content{
+    width: 1440px;
+    height: 692px;
+    background: url(../img/announce-bg.png) no-repeat;
+    position: relative;
+
+}
+
+/*个人中心logo*/
+.my-logo{
+    margin-top: 12px;
+    position: absolute;
+    left: 654px;
+    display: block;
+}
+/*全体表*/
+.all-table{
+	position: absolute;
+	top: 96px;
+	left: 165px;
+	overflow-x:auto;
+	width:  1111px;
+	height: 491px;
+	
+	background: url(../img/all-table-bg.png) no-repeat;
+}
+.table, .table td {
+    border: solid 1px #ccc;
+    padding: 8px 8px;
+}
+.table {
+    width: 96%;
+    margin-top: 56px;
+    height: 435px;
+}
+.first{
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+.time{
+    font-size: 18px;
+    color: #fff;
+}
+/*星期*/
+.week{
+    position: absolute;
+    top:58px;
+    left:64px;
+    font-size: 32px;
+    color: white;
+ 
+}
+/*值岗人姓名*/
+.all-table .p1{
+    position: absolute;
+    top: 130px;
+    left: 200px;
+    height:40px ;
+    font-size: 28px;
+    color:white;
+    }
+
+.all-table .p2{
+    position: absolute;
+    top: 192px;
+    left: 200px;
+    height:40px ;
+    font-size: 28px;
+    color:white;
+    }
+.all-table .p3{
+    position: absolute;
+    top: 254px;
+    left: 200px;
+    height:40px ;
+    font-size: 28px;
+    color:white;
+    }
+.all-table .p4{
+    position: absolute;
+    top: 316px;
+    left: 200px;
+    height:40px ;
+    font-size: 28px;
+    color:white;
+    }
+.all-table .p5{
+    position: absolute;
+    top: 378px;
+    left: 200px;
+    height:40px ;
+    font-size: 28px;
+    color:white;
+    }
+.all-table .p6{
+    position: absolute;
+    top: 440px;
+    left: 200px;
+    height:40px ;
+    font-size: 28px;
+    color:white;
+    }
+
+
+
+/*最下方*/
+#bottom #last{
+    width: 1440px;
+    height: 97px;
+    background: url(../img/lastbg.png) no-repeat;
+    position: absolute;
+    bottom: 0;
+}
+/*横线*/
+#bottom .logo{
+    position: absolute;
+   
+    left: 684px;
+    background: url(../img/logo1.png)no-repeat;
+    width: 65px;
+    height: 62px;
+}
+/*卓音标志*/
+#bottom #last .center{
+    width: 292px;
+    height: 97px;
+    position: absolute;
+    top: 0;
+    left: 572px;
+}
+/*最后落款*/
+#bottom #last .center p{
+    width: 292px;
+    height: 63px;
+    text-align: center;
+    display: block;
+    line-height: 63px;
+    font-size: 24px;
+    color: #466c55;
+}
+/*Registration System*/
+#bottom #last .center span{
+    font-size: 14px;
+    color: #040404;
+    display: block;
+    width: 292px;
+    text-align: center;
+}
+/*东北师范大学·学生就业指导中心·卓音工作室*/
+.exit{
+    width: 307px;
+    height: 104px;
+    background-color: #fdfcfc;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*退出框*/
+.exit p{
+    font-family: "微软雅黑";
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    width: 306px;
+    height: 62px;
+    line-height: 62px;
+}
+/*确定退出*/
+.exit .btn{
+    width: 133px;
+    height: 23px;
+    margin: 0 auto;
+}
+/*两个按钮*/
+.exit a{
+    background-color: #91928d;
+    width: 56px;
+    height: 23px;
+    display: block;
+    border-radius: 5px;
+     font-family: "微软雅黑";
+    font-size: 16px;
+    color: #fcfbfb;
+    float: left;
+}
+/*确定，取消*/
+.exit .btn .no{
+    margin-left: 21px;
+}
+/*取消*/

@@ -1,0 +1,66 @@
+a:2:{i:0;a:2:{i:0;s:2560:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>后盾网文章管理系统</title>
+
+<link href="/yiiweb/blog/assets/index/css/common.css" rel="stylesheet" />
+</head>	
+<body>
+	<div id="top">
+	</div>
+	<div id="header">
+		<div class='logo'>
+			<a href=""><img src="/yiiweb/blog/assets/index/images/logo.jpg" alt=""></a>
+		</div>
+		<div class='navigation'>
+			<a href="/yiiweb/blog/index.php?r=index/index">首页</a>
+						 				<a href="/yiiweb/blog/index.php?r=category/index&cid=15">情感</a>
+							<a href="/yiiweb/blog/index.php?r=category/index&cid=16">生活</a>
+							<a href="/yiiweb/blog/index.php?r=category/index&cid=21">活动</a>
+							<a href="/yiiweb/blog/index.php?r=category/index&cid=22">新闻</a>
+					</div>
+	</div>
+
+	
+	<link href="/yiiweb/blog/assets/index/css/details.css" rel="stylesheet" />
+	<div id="main">
+		<div class='details'>
+			<h1>请问的</h1>
+			<div class='info'>
+				<div class='base'>
+					<em>发表于 03:49:00</em>, 分类：<strong>活动</strong>
+				</div>
+			</div>
+			<div class='content'>
+				<p>但是复苏的地方反反复复但是复苏的地方反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复但是复苏的地方反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复反反复复</p>			</div>
+		</div>
+
+			
+	<div class='sidebar'>
+			<div class='item'>
+				<h2>文章标题</h2>
+				<ul class='flink'>
+																		<li><a href="/yiiweb/blog/index.php?r=article/index&aid=61">春游</a></li>
+													<li><a href="/yiiweb/blog/index.php?r=article/index&aid=60">请问的</a></li>
+													<li><a href="/yiiweb/blog/index.php?r=article/index&aid=59">春游</a></li>
+													<li><a href="/yiiweb/blog/index.php?r=article/index&aid=58">春游活动</a></li>
+													<li><a href="/yiiweb/blog/index.php?r=article/index&aid=57">春游111</a></li>
+															</ul>
+			</div>
+			
+		</div>
+	</div>
+	<div id="footer">
+		<div class='bgbar'></div>
+		<div class='bottom'>
+			<div class='pos'>
+				<div class='copyright'>
+					© Copyright 2011-2013 www.houdunwang 后盾网
+				</div>
+			</div>	
+		</div>
+	</div>
+</body>
+</html>
+";i:1;N;}i:1;N;}

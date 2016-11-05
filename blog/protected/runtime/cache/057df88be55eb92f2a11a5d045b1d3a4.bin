@@ -1,0 +1,219 @@
+a:2:{i:0;a:2:{i:0;s:6543:"
+	<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>卓音在线</title>
+	<script type="text/javascript" src="/join_ol/blog/assets/index/js/jquery.js"></script>
+	<script type="text/javascript" src="/join_ol/blog/assets/index/js/join.js"></script>
+	<script type="text/javascript" src="/join_ol/blog/assets/index/js/jquery.pagination.js"></script>
+	<link rel="stylesheet" type="text/css" href="/join_ol/blog/assets/index/css/pagination.css">
+	<link rel="stylesheet" type="text/css" href="/join_ol/blog/assets/index/css/join.css">
+	<script type="text/javascript">
+	$(function(){
+		var initPagination = function() {
+			var num_entries = 1; //数据总数
+			// 创建分页
+			$("#Pagination").pagination(num_entries, {
+				num_edge_entries: 1, //边缘页数
+				num_display_entries: 2, //主体页数
+				callback: pageselectCallback,
+				items_per_page: 8, //每页显示项
+				prev_text: "前一页",
+				next_text: "后一页"
+			});
+		 };
+
+		function pageselectCallback(page_index){
+			page_index=page_index;
+			$.ajax({
+				url:"/join_ol/blog/index.php?r=index/ajax&page="+page_index,//路径
+				dataType: "json",//数据
+				// data:{page:page_index},//传的参数
+				success:function(data){
+					var content = '';	
+					var baseUrl = "/join_ol/blog";			
+					$.each(data,function(n,value){//data你要被循环的数组或对象，回调函数每次循环做什么事
+        				$("#activity #activity_content").empty();//empty
+
+
+        				content += "<li class='li'> <div><a href='"
+        				       + baseUrl+'/index.php?r=index/detail&aid='+value.aid
+        				       +"'><img src='"+ baseUrl+'/uploads/article/'+value.thumb+"'></a> </div><p>"
+        				       +value.title+"</p></li>";
+
+
+                                               
+        			});
+        			
+
+        			$("#activity #activity_content").html(content);
+				}
+			});
+			return false;
+		}
+
+		//ajax加载
+
+		$("#activity #activity_content").load("/join_ol/blog/index.php?r=index/ajax&page=0", null, initPagination);
+	});
+</script>
+</head>
+<body>
+    <div id="top">
+		<div id="top_content">
+			<div id="top_logo">
+				<img src="/join_ol/blog/assets/index/img/top_logo.png">
+			</div>
+			<div id="top_nav">
+				<ul>
+					<li id="yes" class="duang"><a href="/join_ol/blog/index.php?r=index/index">首页</a></li>
+					<li><a href="/join_ol/blog/index.php?r=team/index">团队</a></li>
+					<li><a href="/join_ol/blog/index.php?r=compo/index">作品</a></li>
+					<li><a href="/join_ol/blog/index.php?r=about/index">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div id="banner">
+		<div class="scroll">
+			<ul>
+			    			    	<li><img src="/join_ol/blog/uploads/scroll/img_1473230983.png" ></li>
+			    			</ul>
+		</div>
+		
+		<div class="point">
+			<ul>
+			    					<li class="poc_r"></li>
+					
+			</ul>
+		</div>
+	</div>
+	<div id="notice">
+		<div class="notice_top">
+			<p class="big">公告板</p>
+			<div class="img"></div>
+			<p class="small">ANNUNCIATOR   BOARDS</p>
+		</div>
+		<div class="notice_content">
+			<ul>
+				<li>
+					<div id="content1"></div>
+					<p>工作室规定</p>
+				</li>
+				<li>
+					<div id="content2"></div>
+					<p>今日值岗</p>
+				</li>
+				<li>
+					<div id="content3"></div>
+					<p>今日值日</p>
+				</li>
+				<li class="no">
+					<div id="content4"></div>
+					<p>近期通知</p>
+				</li>
+			</ul>
+		</div>
+		<div id="btn_small">
+			<ul>
+				<li class="li1" title="规定"></li>
+				<li class="li2" title="值岗"></li>
+				<li class="li3" title="值日"></li>
+				<li class="li4" title="公告"></li>
+			</ul>
+		</div>
+		<div id="content">
+			<ul>
+				<li>
+					<p class="li1_p">1.<strong style="color: red;">禁止 看视频、玩游戏</strong>或做其他与工作无关之事</p>
+					<p class="li1_p">2.按时上岗<strong style="color: red;">签到</strong>,请假请提前一天，说明具体原因，且事后补岗</p>
+					<p class="li1_p">3.保持桌面整洁</p>
+					<p class="li1_p">4.对来访老师要主动热情、有礼貌</p>
+					<p class="li1_p">5.禁止大声喧哗</p>
+				</li>
+				<li>
+					<div class="li2"></div>
+					<p>2016年9月7日</p>
+					<p>星期三</p>
+					<p></p>
+					<p>值岗人员：
+					  					  	<span> &nbsp;</span>
+					  	
+					  					</p>
+				</li>
+				<li>
+					<div class="li3"></div>
+						<p>2016年9月7日</p>
+						<p>星期三</p>
+						<p>今天第一组值日哦，第一组的同学们不要忘记啦！！</p>
+				</li>
+				<li>
+					<div id="announce">
+													<p>
+							   <a href="/join_ol/blog/index.php?r=index/announce&id=13">
+                                  纳新摆台安排表							   </a>
+							   <span>(2016-09-07)</span>
+							</p>
+											</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="activity">
+		<div class="notice_top">
+			<p class="big">joiners 活动</p>
+			<div class="img"></div>
+			<p class="small">OUR  ACTIVITIES</p>
+		</div>
+		<p class="chinese">我们的活动，我们共同的欢乐时光</p>
+		<div id="activity_content">
+
+			
+		    
+
+		</div>
+		<div id="Pagination" class="pagination">
+	</div>
+
+	
+	<div id="map"></div>
+	<div id="footer">
+		<div id="con">
+			<h1>联系我们</h1>
+			<div class="footer_content">
+				<div class="footer_list">
+					<h2>新浪微博</h2>
+					<div class="line"></div>
+					<div class="img" id="img1"></div>
+					<p class="p1">卓音工作室的微博_微博</p>
+					<p class="p2"><a href="http://weibo.com/myjoin">http://weibo.com/myjoin</a></p>
+				</div>
+				<div class="footer_list">
+					<h2>联系方式</h2>
+					<div class="line"></div>
+					<div class="img" id="img3"></div>
+					<p class="p1">电话：0431-85098169</p>
+					<p class="p2">Email：xxxx@nenu.edu.cn</p>
+				</div>
+				<div class="footer_list">
+					<h2>腾讯QQ</h2>
+					<div class="line"></div>
+					<div class="img" id="img2"></div>
+					<p class="p1">QQ号:</p>
+					<p id="p2">2637760965</p>
+				</div>
+			</div>
+		</div>
+		<div class="link">
+			<p>友情链接   ： <a href="http://www.dsjyw.net/">东北高师就业联盟网</a> <a href="http://careers.nenu.edu.cn/">就业指导中心</a></p>
+		</div>
+		<div class="banq">
+				<p>版权所有：东北师范大学学生就业指导服务中心&nbsp;&nbsp;&nbsp;卓音工作室 开发/维护</p>
+		</div>
+	</div>
+</body>
+</html>
+
+";i:1;N;}i:1;N;}

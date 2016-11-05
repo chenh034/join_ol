@@ -1,0 +1,500 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+   
+    margin: 0 auto;
+    font-family: "微软雅黑";
+    width: 100%;
+    
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+a{
+    list-style: none;
+    text-decoration:none;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input,button,select,textarea{outline:none;
+border:none;}
+ textarea{resize:none}
+ body{
+    width: 1440px;
+    height: 900px;
+    position: relative;
+    font-family: "微软雅黑";
+    position: relative;
+ }
+ #nav{
+    width: 1440px;
+    height:40px;
+    background:#464040;
+}
+/*导航栏*/
+#nav .title{
+    float: left;
+    width: 144px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 638px;
+    margin-top: 8px;
+}
+
+/*卓音签到系统*/
+#nav .title p{
+    font-size: 24px;
+    color: #fefefe;
+    line-height: 22px;
+    width: 500px;
+    text-align: left;
+
+}
+/*卓音*/
+#nav .title span{
+   
+    color: #46e28f;
+    font-size: 24px;
+}
+/*签到系统*/
+#nav li{
+    float: left;
+}
+#nav li a{
+    display: block;
+    color: #fefcfc;
+    font-size: 22px;
+    padding: 5px 45px;
+    background:#464040;
+}
+/*首页，历史公告，个人中心*/
+#nav li a:hover,#nav li  .a{
+    background-color: #466c55;
+}
+/*首页，历史公告，个人中心的变化*/
+#nav  #exitshow{
+    
+    font-size: 20px;
+    color: #fefcfc;
+    line-height: 40px;
+}
+/*退出登录的样式*/
+/*背景*/
+#content{
+    width: 1440px;
+    height: 692px;
+    background: url(../img/announce-bg.png) no-repeat;
+    position: relative; 
+
+}
+
+/*个人中心logo*/
+.my-logo{
+    margin-top: 12px;position: absolute;left: 654px;
+    display: block;
+}
+
+.table-left{
+	position: absolute;
+	width: 644px;
+	height:378px ;
+	background:url(../img/my-onetable.png) no-repeat;
+	top: 172px;
+	left: 76px;
+
+}
+.right{
+	position: absolute;
+	width:422px ;
+	height:232px ;
+	background:url(../img/my-onetime.png) no-repeat; 
+	top: 198px;
+	right: 104px;
+	border-radius: 10px;
+}
+.right .title{
+    color: #f9f3f2;
+    font-size: 25px;
+    font-family: ;
+    display: inline;
+    line-height: 46px;
+}
+.span{margin: 0 55px;}
+.hid{
+    color: #959b97;
+    font-size:23px ;
+    font-family: ;
+    margin-top: 24px;
+}
+.current{
+  
+    color: #f9f3f2;
+    font-size: 25px;
+    font-family: ;
+    
+    background-color:#4c4d4f;
+    opacity: 1;
+}
+/*四个翻页按钮*/
+.but1{display: block;
+    width:20px; 
+    height:16px ;
+    position: absolute;
+top: 154px;
+left: 96px;
+}
+.but2{display: block;
+    width:20px; 
+    height:16px ;
+    position: absolute;
+top:176px ;
+left:96px ;
+}
+
+.but3{display: block;
+    width:20px; 
+    height:16px ;
+    position: absolute;
+top: 154px;
+left: 317px;
+}
+
+.but4{display: block;
+    width:20px; 
+    height:16px ;
+    position: absolute;
+top:176px ;
+left: 317px;
+}
+
+/*确定取消按钮*/
+
+.ture {
+    color: #f9f3f2;
+    font-size: 25px;
+    font-family: ;
+    position: absolute;
+    top:195px ;
+    left:80px ;
+    
+
+}
+
+.fauth{
+    color: #f9f3f2;
+    font-size: 25px;
+    font-family: ;
+    
+    position: absolute;
+    top:195px ;
+    left:302px ;
+
+}
+.right a:hover{color:#3ca570 ;}
+
+/*个人值岗表*/
+.one-table{
+    width:500px;
+    height: 253px;
+    position: absolute;
+    top: 86px;
+    left: 142px;
+
+}
+.one-table p{
+    text-align: left;
+    width: 500px;
+    height: 36px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#show{
+    position: absolute;
+    top: 474px;
+    right: 368px;
+    width: 115px;
+    height: 58px;
+    cursor: pointer;border-radius: 5px;
+    background: url(../img/qingjia.png) no-repeat;
+}
+#overshow{
+    position: absolute;
+    top: 474px;
+    right:136px ;
+    width:115px ;
+    height: 58px;
+    cursor: pointer;border-radius: 5px;
+    background: url(../img/jiaban.png) no-repeat;
+}
+
+/*最下方*/
+#bottom #last{
+    width: 1440px;
+    height: 97px;
+    background: url(../img/lastbg.png) no-repeat;
+    position: absolute;
+    bottom: 0;
+}
+/*横线*/
+#bottom .logo{
+    position: absolute;
+    top: 750px;
+    left: 684px;
+    background: url(../img/logo1.png)no-repeat;
+    width: 65px;
+    height: 62px;
+}
+/*卓音标志*/
+#bottom #last .center{
+    width: 292px;
+    height: 97px;
+    position: absolute;
+    top: 0;
+    left: 572px;
+}
+/*最后落款*/
+#bottom #last .center p{
+    width: 292px;
+    height: 63px;
+    text-align: center;
+    display: block;
+    line-height: 63px;
+    font-size: 24px;
+    color: #466c55;
+}
+/*Registration System*/
+#bottom #last .center span{
+    font-size: 14px;
+    color: #040404;
+    display: block;
+    width: 292px;
+    text-align: center;
+}
+/*东北师范大学·学生就业指导中心·卓音工作室*/
+.hide{
+    display: none;
+}
+.leave{
+    width: 707px;
+    height: 218px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.leave h1{
+    background: url(../img/tip.png) 0 -56px no-repeat;
+    width: 364px;
+    height: 54px;
+    display: block;
+    text-align: center;
+    margin: 68px auto;
+}
+.leave .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 52px;
+    height: 55px;
+    background: url(../img/close.png) no-repeat;
+}
+.leave .yes{
+    position: absolute;
+    bottom: 8px;
+   right: 15px;
+    width: 104px;
+    height: 58px;
+    background-color: #82e1ae;
+    
+}
+.leave .yes p{
+    width: 94px;
+    height: 40px;
+    display: block;
+    margin: 9px 2px;
+   background: url(../img/tip.png) no-repeat 0 -114px ; 
+}
+.overtime{
+    width: 707px;
+    height: 218px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.overtime h1{
+    background: url(../img/tip.png)no-repeat -60px 0;
+    width: 364px;
+    height: 54px;
+    display: block;
+    text-align: center;
+    margin: 68px auto;
+}
+.overtime .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 52px;
+    height: 55px;
+    background: url(../img/close.png) no-repeat;
+}
+.overtime .yes{
+    position: absolute;
+    bottom: 8px;
+   right: 15px;
+    width: 104px;
+    height: 58px;
+    background-color: #82e1ae;
+    
+}
+.overtime .yes p{
+    width: 94px;
+    height: 40px;
+    display: block;
+    margin: 9px 2px;
+   background: url(../img/tip.png) no-repeat 0 -114px ; 
+}
+.mask{
+    background: #010101;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+/*遮挡层*/
+.exit{
+    width: 307px;
+    height: 104px;
+    background-color: #fdfcfc;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*退出框*/
+.exit p{
+    font-family: "微软雅黑";
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    width: 306px;
+    height: 62px;
+    line-height: 62px;
+}
+/*确定退出*/
+.exit .btn{
+    width: 133px;
+    height: 23px;
+    margin: 0 auto;
+}
+/*两个按钮*/
+.exit a{
+    background-color: #91928d;
+    width: 56px;
+    height: 23px;
+    display: block;
+    border-radius: 5px;
+     font-family: "微软雅黑";
+    font-size: 16px;
+    color: #fcfbfb;
+    float: left;
+}
+/*确定，取消*/
+.exit .btn .no{
+    margin-left: 21px;
+}
+/*取消*/

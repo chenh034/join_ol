@@ -1,0 +1,234 @@
+﻿#top #top_content {
+	width: 1100px;
+}
+
+
+
+#chanp {
+	background: #fff;
+}
+.content {
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 68px;
+}
+#chanp .content {
+	height: 570px;
+	position: relative;
+}
+.content h1 {
+	color: #0a0a0a;
+	font-size: 24px;
+	float: left;
+}
+.content span {
+	display: block;
+	font-size: 18px;
+	color: #727677;
+	font-style: normal;
+	float: left;
+	margin-left: 4px;
+	margin-top: 8px;
+}
+.content p{
+	clear: both;
+	font-size: 20px;
+	font-style: normal;
+	color: #727677;
+	line-height: 20px;
+}
+.content .line {
+	width: 76px;
+	height: 4px;
+	background-color: #0ea285;
+	margin-top: 15px;
+}
+#chanp .img {
+	width: 522px;
+	height: 413px;
+	clear: left;
+	margin-top: 42px;
+	margin-left:34px;
+	background: url(../img/join_team/join_team_chanp_bg.png) 0 0 no-repeat;
+}
+
+.img ,.list{
+	float: left;
+}
+#chanp .list {
+	position: absolute;
+    top: 139px;
+    left: 558px;
+}
+#chanp .list li {
+	display: block;
+	height: 16px;
+	display: none;
+	font-size: 14px;
+	color: #080808;
+	line-height: 14px;
+	padding-left: 30px;
+	margin-top: 4px;
+	background: url(../img/join_team/chanp_list.png) 0 0 no-repeat;
+}
+
+#code {
+	background-color: #f4f8f7;
+	height: 650px;
+	clear: both;
+}
+#code .content {
+	margin-top: 0px;
+	height: 600px;
+
+}
+#code .img {
+	width: 438px;
+	height: 435px;
+	float: right;
+	display: none;
+	position: relative;
+	top: 73px;
+	right: 88px;
+	background: url(../img/join_team/code_bg.png) 0 0 no-repeat;
+}
+#code .list {
+	margin-top: 58px;
+	display: none;
+	width: 500px;
+}
+#code .list li {
+	color: #717977;
+	font-size: 14px;
+	margin-bottom: 26px;
+}
+
+#shej {
+	height: 643px;
+	position: relative;
+}
+#shej .img {
+	display: none;
+	width: 577px;
+	height: 452px;
+	background: url(../img/join_team/shej_bg.png) 0 0 no-repeat;
+}
+#shej .list {
+	margin-top: 24px;
+	float:right;
+	width:610px;
+	/*display: none;
+	position: absolute;
+	left: 1000px;*/
+	
+}
+#shej .list li {
+	font-size: 14px;
+	color: #080808;
+	line-height: 23px;
+	height: 14px;
+	margin-bottom: 24px;
+}
+.team_t {
+	width: 1000px;
+	margin-top: 40px;
+	margin: 0 auto;
+	height: 278px;
+	clear: both;
+	text-align: center;
+}
+
+.team_b {
+	width: 1000px;
+	margin-top: 40px;
+	margin: 0 auto;
+	height: 278px;
+	clear: both;
+	text-align: center;
+}
+.team_u {
+	width: 1000px;
+	margin-top: 40px;
+	margin: 0 auto;
+	height: 550px;
+	clear: both;
+	
+}
+.bg {
+	width: 216px;
+	height: 158px;
+	position: relative;
+	top: 310px;
+	left: 590px;
+	background: url(../img/join_team/team.png) 0 0 no-repeat;
+}
+
+.team_t li {
+	display: inline-block;
+}
+.team_b li {
+	display: inline-block;
+}
+
+.team_t li img{
+	width: 115px;
+	height: 155px;
+	float: left;
+	margin: 5px;
+
+}
+.team_t h1 {
+	font-size: 40px;
+	text-align: center;
+	color: #09f5bf;
+	margin-bottom: 30px;
+}
+.team_b li img{
+	width: 115px;
+	height: 155px;
+	float: left;
+	margin: 5px;
+
+}
+.team_b h1 {
+	font-size: 40px;
+	text-align: center;
+	color: #09f5bf;
+	margin-bottom: 30px;
+}
+
+.team_u li img{
+	width: 115px;
+	height: 155px;
+	float: left;
+	margin: 5px;
+
+}
+.team_u h1 {
+	font-size: 40px;
+	text-align: center;
+	color: #09f5bf;
+	margin-bottom: 30px;
+}
+#tooltip{
+	text-align: left;
+}
+#tooltip1{
+	text-align: left;
+}
+.tip{
+	width:160px;
+	height:90px;
+	display:none;
+	background-color:#51f7b7;
+	color:#727677;
+	font-family: "微软雅黑";
+	line-height:18px;
+	padding:12px 0 5px 30px;
+	border: 2px solid;
+	border-radius: 15px;
+}
+.tip li{
+	margin-bottom: 4px;
+}
+

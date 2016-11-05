@@ -1,0 +1,514 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+   
+    margin: 0 auto;
+    font-family: "微软雅黑";
+    width: 100%;
+    margin-top:-23px;
+    
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+a{
+    list-style: none;
+    text-decoration:none;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input,button,select,textarea{outline:none;
+border:none;}
+ textarea{resize:none}
+input{
+    background: none;
+    border: none;
+}
+/*样式清零*/
+#nav{
+    width: 1440px;
+    height:40px;
+    background:#464040;
+}
+/*导航栏*/
+#nav .title{
+    float: left;
+    width: 144px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 638px;
+    margin-top: 8px;
+}
+
+/*卓音签到系统*/
+#nav .title p{
+    font-size: 24px;
+    color: #fefefe;
+    line-height: 22px;
+    width: 500px;
+    text-align: left;
+
+}
+/*卓音*/
+#nav .title span{
+   
+    color: #46e28f;
+    font-size: 24px;
+}
+/*签到系统*/
+#nav li{
+    float: left;
+}
+#nav li a{
+    display: block;
+    color: #fefcfc;
+    font-size: 22px;
+    padding: 5px 45px;
+    background:#464040;
+}
+/*首页，历史公告，个人中心*/
+#nav li a:hover{
+    background-color: #466c55;
+}
+/*首页，历史公告，个人中心的变化*/
+#nav  #exitshow{
+    
+    font-size: 20px;
+    color: #fefcfc;
+    line-height: 40px;
+}
+/*退出登录的样式*/
+#content{
+    width: 1440px;
+    height: 760px;
+    background:#ffffff;
+}
+/*中间部分*/
+#content #sign{
+    height: 516px;
+    width: 1440px;
+    background: url(../img/signbg.png) no-repeat;
+    position: relative;
+}
+/*签到计时部分*/
+#content #sign p{
+    font-size: 45.84px;
+    color: #46e28f;
+    position: absolute;
+    top: 96px;
+    left: 111px;
+}
+/*Registration System*/
+#content #sign .name1{
+    top: 96px;
+    left: 111px;
+}
+/*Registration*/
+#content #sign .name2{
+    top: 151px;
+    left: 111px;
+}
+/*System*/
+#content #sign .num{
+    display: block;
+    width: 194px;
+    height: 43px;
+    background: url(../img/clock.png) no-repeat;
+    position: absolute;
+    font-size: 34.38px;
+    color: #fcfafa;
+    top: 263px;
+    left: 111px;
+    text-align: left;
+}
+/*第一节岗及其小时钟背景*/
+#content #sign .greatcircle{
+    width: 462px;
+    height:493px;
+   
+    position: absolute;
+    top: 0;
+    left: 490px;
+
+}
+/*大背景圆形*/
+#content #sign .greatcircle h1{
+    display: block;
+    text-align: center;
+    width: 462px;
+    height: 46px;
+    font-size: 52.81px;
+    color: #fcfafa;
+    position: absolute;
+    top:128px;
+    left: 0;
+    font-weight: 400;
+}
+/*每节值岗时间*/
+#content #sign .greatcircle .smallcircle{
+    width: 112px;
+    height: 112px;
+    
+    position: absolute;
+    top: 202px;
+    left: 173px;
+    border-radius: 100%;
+}
+/*签到按钮小园*/
+#content #sign .greatcircle .smallcircle  a{
+    line-height: 111px;
+    text-align: center;
+    font-size: 31.69px;
+    color: #56585a;  
+    cursor: pointer;  
+}
+/*签到*/
+#content #sign .greatcircle #timing span{
+    width: 156px;
+    height: 57px;
+    background:url(../img/logo.png) no-repeat 0 -129px;
+    position: absolute;
+    left: 150px;
+    top: 350px; 
+    FILTER:glow(color=#6699FF,direction=2); 
+}
+#timing{
+    width: 156px;
+    height: 57px;
+    background:url(../img/logo.png) no-repeat 0 -129px;
+    position: absolute;
+    left: 150px;
+    top: 350px; 
+    FILTER:glow(color=#6699FF,direction=2); 
+    width: 156px;
+display: block;
+    font-size: 50px;
+    color: #fcfafa;
+    line-height: 57px;
+    text-align: center;
+    font-family: 'hooray';
+}
+/*计时*/
+ @font-face{
+    font-family: 'hooray';
+    src:url('../font/hooray.eot');
+    src:url('../font/hooray.eot?#iefix') format('eot') ,
+    url('../font/hooray.woff') format('woff'),
+    url('../font/hooray.ttf') format('truetype'),
+    url('../font/hooray.svg#webfontjKg17VrE') format('svg');
+
+ }
+
+#content #sign .greatcircle #timing span{
+    width: 156px;
+display: block;
+    font-size: 53px;
+    color: #fcfafa;
+    line-height: 57px;
+    text-align: center;
+    font-family: 'hooray';
+}
+/*计时*/
+#content #notice{
+    width: 1440px;
+    height: 246px;
+    position: relative;
+}
+/*内容下方*/
+#content #notice .announce{
+    width: 536px;
+    height: 110px;
+    background-color: #87e9b4;
+    position: absolute;
+    top: 51px;
+    left:449px;
+}
+/*公告*/
+#content #notice .announce .noticeboard{
+    width: 354px;
+    height: 68px;
+    position: absolute;
+    top: 18px;
+    left: 42px;
+}
+/*公告栏*/
+#content #notice .announce .noticeboard h3{
+    display: block;
+    width: 56px;
+    height: 30px;
+    background:url(../img/gonggao.png) no-repeat ;
+    float: left;
+}
+/*公告*/
+#content #notice .announce .noticeboard .title{
+    font-size:18px;
+    color: #464040;
+    display: block;
+    line-height: 34px;
+}
+/*公告内容*/
+#content #notice .announce .enter{
+    background: url(../img/logo.png)  no-repeat 2px -193px ;
+    font-size: 17.07px;
+    color: #464040;
+    width: 110px;
+    height: 45px;
+    position: absolute;
+    top: 62px;
+    right: 26px;
+    line-height: 30px;
+   
+}
+/*进入公告按钮*/
+#content #notice .logo{
+    position: absolute;
+    top: 134px;
+    right: 35px;
+    width: 104px;
+    height: 97px;
+    background: url(../img/logo.png) no-repeat 0px -236px;
+}
+/*卓音logo*/
+#bottom{
+    width: 1440px;
+    height: 97px;
+    background: #464040;
+    position: relative;
+}
+/*最下方*/
+#bottom #last{
+    width: 1440px;
+    height: 97px;
+    background: url(../img/lastbg.png) no-repeat;
+}
+/*横线*/
+#bottom #last .center{
+    width: 292px;
+    height: 97px;
+    position: absolute;
+    top: 0;
+    left: 572px;
+}
+/*最后落款*/
+#bottom #last .center p{
+    width: 292px;
+    height: 63px;
+    text-align: center;
+    display: block;
+    line-height: 63px;
+    font-size: 24px;
+    color: #fffefe;
+}
+/*Registration System*/
+#bottom #last .center span{
+    font-size: 14px;
+    color: #040404;
+    display: block;
+    width: 292px;
+    text-align: center;
+}
+/*东北师范大学·学生就业指导中心·卓音工作室*/
+.hide{
+    display: none;
+}
+/*没点击签到时候登录框隐藏*/
+/*没点击退出登录时候退出框隐藏*/
+/*IP地址没错误时隐藏*/
+.log{
+    width: 686px;
+    height: 633px;
+    background: url(../img/log.png) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2
+}
+/*登录框*/
+.log p{
+    font-family: "Berlin Sans FB";
+    font-size: 48px;
+    color: #26523b;
+    position: absolute;
+    top: 98px;
+    left: 224px;
+}
+/*Hello Joiners*/
+.log form{
+    width: 483px;
+    height: 220px;
+    position: absolute;
+    top: 150px;
+    left: 93px;
+}
+/*两个输入框*/
+.log form h1{
+    width: 130px;
+    height: 40px;
+    background: url(../img/pass.png) no-repeat 0 0;
+    position: absolute;
+    top:51px;
+    left:0; 
+}
+/*用户名*/
+.log form h2{
+    width: 132px;
+    height: 40px;
+    background: url(../img/pass.png) no-repeat 0px -40px;
+    position: absolute;
+    left: 0;
+    top: 155px;
+}
+/*密码*/
+.log form .yourname,.log form .yourpw{
+    width: 280px;
+    height: 54px;
+    font-family: "微软雅黑";
+    font-size: 30px;
+    color: #343634;
+}
+/*用户名框，密码框*/
+.log form .yourname{
+    position: absolute;
+    top: 41px;
+    left: 174px;
+}
+/*用户名框*/
+.log form .yourpw{
+    position: absolute;
+    left: 174px;
+    top: 147px;
+}
+/*密码框*/
+.log .login{
+    position: absolute;
+    top: 245px;
+    left: 242px;
+    background: url(../img/login.png)no-repeat;
+    width: 109px;
+    height: 50px;
+}
+/*登录*/
+.log span{
+    font-size: 18px;
+    font-family: "微软雅黑";
+    color: #e0e3e4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 686px;
+    height: 18px;
+    text-align: center;
+}
+/*东北师范大学·学生就业指导中心·卓音工作室*/
+.mask{
+    background: #010101;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+/*遮挡层*/
+.exit{
+    width: 307px;
+    height: 104px;
+    background-color: #fdfcfc;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+right:0;
+margin:0 auto;
+}
+/*退出框*/
+.exit p{
+    font-family: "微软雅黑";
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    width: 306px;
+    height: 62px;
+    line-height: 62px;
+}
+/*确定退出*/
+.exit .btn{
+    width: 133px;
+    height: 23px;
+    margin: 0 auto;
+}
+/*两个按钮*/
+.exit a{
+    background-color: #91928d;
+    width: 56px;
+    height: 23px;
+    display: block;
+    border-radius: 5px;
+     font-family: "微软雅黑";
+    font-size: 16px;
+    color: #fcfbfb;
+    float: left;
+}
+/*确定，取消*/
+.exit .btn .no{
+    margin-left: 21px;
+}
+/*取消*/
+.ip{
+    color: #1c1c1c;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    text-align: center;
+    background-color: #fdfcfc;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+right:0;
+margin:0 auto;
+    width: 446px;
+    height:60px;
+    line-height: 60px;
+    z-index: 2;
+}
+/*ip框*/
